@@ -16,7 +16,10 @@ for file in *.compose.yaml; do
     composeFiles+=($file)
 done
 
-echo ${composeFiles[@]}
+if [ ${#composeFiles[@]} -eq 0 ]; then
+    echo -e '[!!] Compose files not found\n'
+    exit 1
+fi
 
 python - << EOF
 import sys, signal, yaml
