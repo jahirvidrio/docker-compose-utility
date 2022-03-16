@@ -1,7 +1,7 @@
-# Instalation
+# Installation
 ```sh
 # Download docker-compose.sh
-$ curl https://gist.githubusercontent.com/jahirvidrio/a47173efe3a0e3d6ca0283bd54634743/raw/docker-compose.sh -o ~/docker-compose.sh
+$ curl https://raw.githubusercontent.com/jahirvidrio/docker-compose-utility/main/docker-compose.sh -o ~/docker-compose.sh
 
 # Add execution permission
 $ chmod +x ~/docker-compose.sh
